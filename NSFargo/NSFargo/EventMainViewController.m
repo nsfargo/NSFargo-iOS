@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    // load events
+    NSURL *eventsURL = [[NSBundle mainBundle] URLForResource:@"events" withExtension:@"json"];
+    NSString *stringPath = [eventsURL absoluteString]; //this is correct
+    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:stringPath]];
+    NSError *error;
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+    NSLog(@"json: %@", json);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,6 +53,8 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
+    
+    cell.textLabel.text = @"test";
     
     return cell;
 }

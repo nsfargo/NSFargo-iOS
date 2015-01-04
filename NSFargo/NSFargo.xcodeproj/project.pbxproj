@@ -20,6 +20,7 @@
 		A9308FD31A58D1A600C05D01 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9308FD21A58D1A600C05D01 /* MainInterface.storyboard */; };
 		A9308FD61A58D1A600C05D01 /* UpcomingEvents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9308FC81A58D1A600C05D01 /* UpcomingEvents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A9308FDC1A58DC9C00C05D01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9308FDB1A58DC9C00C05D01 /* Images.xcassets */; };
+		A9AA0E791A58EED000AFB55A /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = A9AA0E781A58EED000AFB55A /* events.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		A9308FD01A58D1A600C05D01 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		A9308FD21A58D1A600C05D01 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		A9308FDB1A58DC9C00C05D01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9AA0E781A58EED000AFB55A /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				A9308F9D1A58B9A900C05D01 /* LaunchScreen.xib */,
 				A9308FDB1A58DC9C00C05D01 /* Images.xcassets */,
 				A9308F8B1A58B9A900C05D01 /* Supporting Files */,
+				A9AA0E781A58EED000AFB55A /* events.json */,
 			);
 			path = NSFargo;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			files = (
 				A9308F9F1A58B9A900C05D01 /* LaunchScreen.xib in Resources */,
 				A9308FDC1A58DC9C00C05D01 /* Images.xcassets in Resources */,
+				A9AA0E791A58EED000AFB55A /* events.json in Resources */,
 				A9308FB51A58BABD00C05D01 /* MainWindow.xib in Resources */,
 				A9308FBC1A58C0D900C05D01 /* EventMainViewController.xib in Resources */,
 			);
@@ -591,6 +595,7 @@
 				A9308FB01A58B9A900C05D01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9308FB11A58B9A900C05D01 /* Build configuration list for PBXNativeTarget "NSFargoTests" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +604,7 @@
 				A9308FB31A58B9A900C05D01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9308FD71A58D1A600C05D01 /* Build configuration list for PBXNativeTarget "UpcomingEvents" */ = {
 			isa = XCConfigurationList;
@@ -607,6 +613,7 @@
 				A9308FD91A58D1A600C05D01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

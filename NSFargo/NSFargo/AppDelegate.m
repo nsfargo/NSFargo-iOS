@@ -62,8 +62,8 @@
     EventMainViewController *events = [[EventMainViewController alloc] initWithNibName:@"EventMainViewController" bundle:nil];
     events.title = NSLocalizedString(@"Events", @"Events");
     UINavigationController *eventNav = [[UINavigationController alloc] initWithRootViewController:events];
-    eventNav.tabBarItem.image = [UIImage imageNamed:@""];
-    eventNav.tabBarItem.selectedImage = [UIImage imageNamed:@""];
+    eventNav.tabBarItem.image = [UIImage imageNamed:@"calendar"];
+    //eventNav.tabBarItem.selectedImage = [UIImage imageNamed:@""];
     eventNav.navigationBar.barStyle = UIBarStyleBlack;
     eventNav.navigationBar.translucent = NO;
     

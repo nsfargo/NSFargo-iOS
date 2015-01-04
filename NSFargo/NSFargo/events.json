@@ -1,0 +1,15 @@
+{ "upcoming":[
+              {
+              "title": "January Meetup",
+              "date": "2015-01-06",
+              "start_time": "18:00",
+              "end_time": "20:00"
+              },
+              {
+              "title": "February Meetup",
+              "date": "2015-02-03",
+              "start_time": "18:00",
+              "end_time": "20:00"
+              }
+              ]
+}
