@@ -11,7 +11,7 @@
 @implementation UIColor (NSFargo)
 
 + (UIColor *)NSFOrange {
-    return [UIColor colorWithRed:241.0/255 green:90.0/255 blue:22.0/255 alpha:1.0f];
+    return [UIColor colorWithRed:241.0/255 green:104.0/255 blue:79.0/255 alpha:1.0f];
 }
 
 + (UIColor *)NSFNavBarColor {

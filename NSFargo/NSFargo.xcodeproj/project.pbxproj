@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A9308F8E1A58B9A900C05D01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9308F8D1A58B9A900C05D01 /* main.m */; };
 		A9308F911A58B9A900C05D01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9308F901A58B9A900C05D01 /* AppDelegate.m */; };
-		A9308F9C1A58B9A900C05D01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9308F9B1A58B9A900C05D01 /* Images.xcassets */; };
 		A9308F9F1A58B9A900C05D01 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9308F9D1A58B9A900C05D01 /* LaunchScreen.xib */; };
 		A9308FAB1A58B9A900C05D01 /* NSFargoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9308FAA1A58B9A900C05D01 /* NSFargoTests.m */; };
 		A9308FB51A58BABD00C05D01 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9308FB41A58BABD00C05D01 /* MainWindow.xib */; };
@@ -20,6 +19,7 @@
 		A9308FD11A58D1A600C05D01 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9308FD01A58D1A600C05D01 /* TodayViewController.m */; };
 		A9308FD31A58D1A600C05D01 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9308FD21A58D1A600C05D01 /* MainInterface.storyboard */; };
 		A9308FD61A58D1A600C05D01 /* UpcomingEvents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9308FC81A58D1A600C05D01 /* UpcomingEvents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A9308FDC1A58DC9C00C05D01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9308FDB1A58DC9C00C05D01 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,6 @@
 		A9308F8D1A58B9A900C05D01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9308F8F1A58B9A900C05D01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A9308F901A58B9A900C05D01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A9308F9B1A58B9A900C05D01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A9308F9E1A58B9A900C05D01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A9308FA41A58B9A900C05D01 /* NSFargoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSFargoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9308FA91A58B9A900C05D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +76,7 @@
 		A9308FCF1A58D1A600C05D01 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		A9308FD01A58D1A600C05D01 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		A9308FD21A58D1A600C05D01 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		A9308FDB1A58DC9C00C05D01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +133,8 @@
 				A9308F901A58B9A900C05D01 /* AppDelegate.m */,
 				A9308FB61A58C0AE00C05D01 /* Application Views */,
 				A9308FBD1A58C3C500C05D01 /* Helper Classes */,
-				A9308F9B1A58B9A900C05D01 /* Images.xcassets */,
 				A9308F9D1A58B9A900C05D01 /* LaunchScreen.xib */,
+				A9308FDB1A58DC9C00C05D01 /* Images.xcassets */,
 				A9308F8B1A58B9A900C05D01 /* Supporting Files */,
 			);
 			path = NSFargo;
@@ -322,8 +322,8 @@
 			projectRoot = "";
 			targets = (
 				A9308F871A58B9A900C05D01 /* NSFargo */,
-				A9308FA31A58B9A900C05D01 /* NSFargoTests */,
 				A9308FC71A58D1A600C05D01 /* UpcomingEvents */,
+				A9308FA31A58B9A900C05D01 /* NSFargoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -334,9 +334,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9308F9F1A58B9A900C05D01 /* LaunchScreen.xib in Resources */,
+				A9308FDC1A58DC9C00C05D01 /* Images.xcassets in Resources */,
 				A9308FB51A58BABD00C05D01 /* MainWindow.xib in Resources */,
 				A9308FBC1A58C0D900C05D01 /* EventMainViewController.xib in Resources */,
-				A9308F9C1A58B9A900C05D01 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
