@@ -10,8 +10,9 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) IBOutlet UIWindow *window;
+/// main tab bar controller for the application
+@property (strong, nonatomic) UITabBarController *mainTabBarController;
 
 @end
 

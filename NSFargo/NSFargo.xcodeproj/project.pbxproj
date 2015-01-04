@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		A9308F8E1A58B9A900C05D01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9308F8D1A58B9A900C05D01 /* main.m */; };
 		A9308F911A58B9A900C05D01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9308F901A58B9A900C05D01 /* AppDelegate.m */; };
-		A9308F941A58B9A900C05D01 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9308F931A58B9A900C05D01 /* FirstViewController.m */; };
-		A9308F971A58B9A900C05D01 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9308F961A58B9A900C05D01 /* SecondViewController.m */; };
-		A9308F9A1A58B9A900C05D01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9308F981A58B9A900C05D01 /* Main.storyboard */; };
 		A9308F9C1A58B9A900C05D01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9308F9B1A58B9A900C05D01 /* Images.xcassets */; };
 		A9308F9F1A58B9A900C05D01 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9308F9D1A58B9A900C05D01 /* LaunchScreen.xib */; };
 		A9308FAB1A58B9A900C05D01 /* NSFargoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9308FAA1A58B9A900C05D01 /* NSFargoTests.m */; };
+		A9308FB51A58BABD00C05D01 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9308FB41A58BABD00C05D01 /* MainWindow.xib */; };
+		A9308FBB1A58C0D900C05D01 /* EventMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9308FB91A58C0D900C05D01 /* EventMainViewController.m */; };
+		A9308FBC1A58C0D900C05D01 /* EventMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9308FBA1A58C0D900C05D01 /* EventMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +33,15 @@
 		A9308F8D1A58B9A900C05D01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9308F8F1A58B9A900C05D01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A9308F901A58B9A900C05D01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A9308F921A58B9A900C05D01 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		A9308F931A58B9A900C05D01 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		A9308F951A58B9A900C05D01 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		A9308F961A58B9A900C05D01 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		A9308F991A58B9A900C05D01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9308F9B1A58B9A900C05D01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A9308F9E1A58B9A900C05D01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A9308FA41A58B9A900C05D01 /* NSFargoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSFargoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9308FA91A58B9A900C05D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9308FAA1A58B9A900C05D01 /* NSFargoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSFargoTests.m; sourceTree = "<group>"; };
+		A9308FB41A58BABD00C05D01 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		A9308FB81A58C0D900C05D01 /* EventMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventMainViewController.h; sourceTree = "<group>"; };
+		A9308FB91A58C0D900C05D01 /* EventMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventMainViewController.m; sourceTree = "<group>"; };
+		A9308FBA1A58C0D900C05D01 /* EventMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +85,11 @@
 			children = (
 				A9308F8F1A58B9A900C05D01 /* AppDelegate.h */,
 				A9308F901A58B9A900C05D01 /* AppDelegate.m */,
-				A9308F921A58B9A900C05D01 /* FirstViewController.h */,
-				A9308F931A58B9A900C05D01 /* FirstViewController.m */,
-				A9308F951A58B9A900C05D01 /* SecondViewController.h */,
-				A9308F961A58B9A900C05D01 /* SecondViewController.m */,
-				A9308F981A58B9A900C05D01 /* Main.storyboard */,
+				A9308FB61A58C0AE00C05D01 /* Application Views */,
 				A9308F9B1A58B9A900C05D01 /* Images.xcassets */,
 				A9308F9D1A58B9A900C05D01 /* LaunchScreen.xib */,
 				A9308F8B1A58B9A900C05D01 /* Supporting Files */,
+				A9308FB41A58BABD00C05D01 /* MainWindow.xib */,
 			);
 			path = NSFargo;
 			sourceTree = "<group>";
@@ -122,6 +118,24 @@
 				A9308FA91A58B9A900C05D01 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9308FB61A58C0AE00C05D01 /* Application Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9308FB71A58C0B800C05D01 /* Event Views */,
+			);
+			name = "Application Views";
+			sourceTree = "<group>";
+		};
+		A9308FB71A58C0B800C05D01 /* Event Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9308FB81A58C0D900C05D01 /* EventMainViewController.h */,
+				A9308FB91A58C0D900C05D01 /* EventMainViewController.m */,
+				A9308FBA1A58C0D900C05D01 /* EventMainViewController.xib */,
+			);
+			name = "Event Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +218,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9308F9A1A58B9A900C05D01 /* Main.storyboard in Resources */,
 				A9308F9F1A58B9A900C05D01 /* LaunchScreen.xib in Resources */,
+				A9308FB51A58BABD00C05D01 /* MainWindow.xib in Resources */,
+				A9308FBC1A58C0D900C05D01 /* EventMainViewController.xib in Resources */,
 				A9308F9C1A58B9A900C05D01 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,9 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9308F971A58B9A900C05D01 /* SecondViewController.m in Sources */,
 				A9308F911A58B9A900C05D01 /* AppDelegate.m in Sources */,
-				A9308F941A58B9A900C05D01 /* FirstViewController.m in Sources */,
+				A9308FBB1A58C0D900C05D01 /* EventMainViewController.m in Sources */,
 				A9308F8E1A58B9A900C05D01 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,14 +264,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A9308F981A58B9A900C05D01 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A9308F991A58B9A900C05D01 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A9308F9D1A58B9A900C05D01 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -352,6 +358,7 @@
 				INFOPLIST_FILE = NSFargo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -362,6 +369,7 @@
 				INFOPLIST_FILE = NSFargo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

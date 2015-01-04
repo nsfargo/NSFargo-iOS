@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  EventMainViewController.h
 //  NSFargo
 //
 //  Created by Bill Burgess on 1/3/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
-
+@interface EventMainViewController : UIViewController
 
 @end
-

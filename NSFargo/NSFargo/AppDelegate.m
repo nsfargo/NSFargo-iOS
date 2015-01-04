@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "EventMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // load main view
+    [self loadMainView];
+    
     return YES;
+    
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -40,6 +47,25 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - View Loading Methods
+- (void)loadMainView {
+    self.mainTabBarController = [[UITabBarController alloc] init];
+    self.mainTabBarController.view.frame = self.window.frame;
+    self.mainTabBarController.tabBar.translucent = YES;
+    
+    // events
+    EventMainViewController *events = [[EventMainViewController alloc] initWithNibName:@"EventMainViewController" bundle:nil];
+    events.title = NSLocalizedString(@"Events", @"Events");
+    UINavigationController *eventNav = [[UINavigationController alloc] initWithRootViewController:events];
+    eventNav.tabBarItem.image = [UIImage imageNamed:@""];
+    eventNav.tabBarItem.selectedImage = [UIImage imageNamed:@""];
+    
+    [self.mainTabBarController setViewControllers:@[eventNav]];
+    
+    [self.window setRootViewController:self.mainTabBarController];
+    [self.window makeKeyAndVisible];
 }
 
 @end
