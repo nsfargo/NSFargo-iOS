@@ -19,6 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    // set application appearance
+    [self loadAppearanceSettings];
+    
     // load main view
     [self loadMainView];
     
@@ -61,11 +64,20 @@
     UINavigationController *eventNav = [[UINavigationController alloc] initWithRootViewController:events];
     eventNav.tabBarItem.image = [UIImage imageNamed:@""];
     eventNav.tabBarItem.selectedImage = [UIImage imageNamed:@""];
+    eventNav.navigationBar.barStyle = UIBarStyleBlack;
+    eventNav.navigationBar.translucent = NO;
     
     [self.mainTabBarController setViewControllers:@[eventNav]];
     
     [self.window setRootViewController:self.mainTabBarController];
     [self.window makeKeyAndVisible];
+}
+
+- (void)loadAppearanceSettings {
+    NSDictionary *textTitleOptions = @{NSForegroundColorAttributeName :[UIColor whiteColor]};
+    [[UINavigationBar appearance] setTitleTextAttributes:textTitleOptions];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor NSFOrange]];
+    [[UITabBar appearance] setTintColor:[UIColor NSFOrange]];
 }
 
 @end

@@ -15,6 +15,11 @@
 		A9308FB51A58BABD00C05D01 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9308FB41A58BABD00C05D01 /* MainWindow.xib */; };
 		A9308FBB1A58C0D900C05D01 /* EventMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9308FB91A58C0D900C05D01 /* EventMainViewController.m */; };
 		A9308FBC1A58C0D900C05D01 /* EventMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9308FBA1A58C0D900C05D01 /* EventMainViewController.xib */; };
+		A9308FC11A58C40800C05D01 /* UIColor+NSFargo.m in Sources */ = {isa = PBXBuildFile; fileRef = A9308FC01A58C40800C05D01 /* UIColor+NSFargo.m */; };
+		A9308FCB1A58D1A600C05D01 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9308FCA1A58D1A600C05D01 /* NotificationCenter.framework */; };
+		A9308FD11A58D1A600C05D01 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9308FD01A58D1A600C05D01 /* TodayViewController.m */; };
+		A9308FD31A58D1A600C05D01 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9308FD21A58D1A600C05D01 /* MainInterface.storyboard */; };
+		A9308FD61A58D1A600C05D01 /* UpcomingEvents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9308FC81A58D1A600C05D01 /* UpcomingEvents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +30,28 @@
 			remoteGlobalIDString = A9308F871A58B9A900C05D01;
 			remoteInfo = NSFargo;
 		};
+		A9308FD41A58D1A600C05D01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9308F801A58B9A800C05D01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9308FC71A58D1A600C05D01;
+			remoteInfo = UpcomingEvents;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9308FDA1A58D1A600C05D01 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A9308FD61A58D1A600C05D01 /* UpcomingEvents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A9308F881A58B9A900C05D01 /* NSFargo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSFargo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +68,15 @@
 		A9308FB81A58C0D900C05D01 /* EventMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventMainViewController.h; sourceTree = "<group>"; };
 		A9308FB91A58C0D900C05D01 /* EventMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventMainViewController.m; sourceTree = "<group>"; };
 		A9308FBA1A58C0D900C05D01 /* EventMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventMainViewController.xib; sourceTree = "<group>"; };
+		A9308FBF1A58C40800C05D01 /* UIColor+NSFargo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NSFargo.h"; sourceTree = "<group>"; };
+		A9308FC01A58C40800C05D01 /* UIColor+NSFargo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NSFargo.m"; sourceTree = "<group>"; };
+		A9308FC31A58C5E700C05D01 /* NSFargo_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFargo_PrefixHeader.pch; sourceTree = "<group>"; };
+		A9308FC81A58D1A600C05D01 /* UpcomingEvents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UpcomingEvents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9308FCA1A58D1A600C05D01 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		A9308FCE1A58D1A600C05D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9308FCF1A58D1A600C05D01 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		A9308FD01A58D1A600C05D01 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		A9308FD21A58D1A600C05D01 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +94,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9308FC51A58D1A600C05D01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9308FCB1A58D1A600C05D01 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +110,8 @@
 			children = (
 				A9308F8A1A58B9A900C05D01 /* NSFargo */,
 				A9308FA71A58B9A900C05D01 /* NSFargoTests */,
+				A9308FCC1A58D1A600C05D01 /* UpcomingEvents */,
+				A9308FC91A58D1A600C05D01 /* Frameworks */,
 				A9308F891A58B9A900C05D01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +121,7 @@
 			children = (
 				A9308F881A58B9A900C05D01 /* NSFargo.app */,
 				A9308FA41A58B9A900C05D01 /* NSFargoTests.xctest */,
+				A9308FC81A58D1A600C05D01 /* UpcomingEvents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,10 +132,10 @@
 				A9308F8F1A58B9A900C05D01 /* AppDelegate.h */,
 				A9308F901A58B9A900C05D01 /* AppDelegate.m */,
 				A9308FB61A58C0AE00C05D01 /* Application Views */,
+				A9308FBD1A58C3C500C05D01 /* Helper Classes */,
 				A9308F9B1A58B9A900C05D01 /* Images.xcassets */,
 				A9308F9D1A58B9A900C05D01 /* LaunchScreen.xib */,
 				A9308F8B1A58B9A900C05D01 /* Supporting Files */,
-				A9308FB41A58BABD00C05D01 /* MainWindow.xib */,
 			);
 			path = NSFargo;
 			sourceTree = "<group>";
@@ -99,6 +145,8 @@
 			children = (
 				A9308F8C1A58B9A900C05D01 /* Info.plist */,
 				A9308F8D1A58B9A900C05D01 /* main.m */,
+				A9308FB41A58BABD00C05D01 /* MainWindow.xib */,
+				A9308FC31A58C5E700C05D01 /* NSFargo_PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +186,50 @@
 			name = "Event Views";
 			sourceTree = "<group>";
 		};
+		A9308FBD1A58C3C500C05D01 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A9308FBE1A58C3D300C05D01 /* Categories */,
+			);
+			name = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		A9308FBE1A58C3D300C05D01 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A9308FBF1A58C40800C05D01 /* UIColor+NSFargo.h */,
+				A9308FC01A58C40800C05D01 /* UIColor+NSFargo.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		A9308FC91A58D1A600C05D01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9308FCA1A58D1A600C05D01 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9308FCC1A58D1A600C05D01 /* UpcomingEvents */ = {
+			isa = PBXGroup;
+			children = (
+				A9308FCF1A58D1A600C05D01 /* TodayViewController.h */,
+				A9308FD01A58D1A600C05D01 /* TodayViewController.m */,
+				A9308FD21A58D1A600C05D01 /* MainInterface.storyboard */,
+				A9308FCD1A58D1A600C05D01 /* Supporting Files */,
+			);
+			path = UpcomingEvents;
+			sourceTree = "<group>";
+		};
+		A9308FCD1A58D1A600C05D01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9308FCE1A58D1A600C05D01 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,10 +240,12 @@
 				A9308F841A58B9A900C05D01 /* Sources */,
 				A9308F851A58B9A900C05D01 /* Frameworks */,
 				A9308F861A58B9A900C05D01 /* Resources */,
+				A9308FDA1A58D1A600C05D01 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A9308FD51A58D1A600C05D01 /* PBXTargetDependency */,
 			);
 			name = NSFargo;
 			productName = NSFargo;
@@ -176,6 +270,23 @@
 			productReference = A9308FA41A58B9A900C05D01 /* NSFargoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A9308FC71A58D1A600C05D01 /* UpcomingEvents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9308FD71A58D1A600C05D01 /* Build configuration list for PBXNativeTarget "UpcomingEvents" */;
+			buildPhases = (
+				A9308FC41A58D1A600C05D01 /* Sources */,
+				A9308FC51A58D1A600C05D01 /* Frameworks */,
+				A9308FC61A58D1A600C05D01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UpcomingEvents;
+			productName = UpcomingEvents;
+			productReference = A9308FC81A58D1A600C05D01 /* UpcomingEvents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,6 +302,9 @@
 					A9308FA31A58B9A900C05D01 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = A9308F871A58B9A900C05D01;
+					};
+					A9308FC71A58D1A600C05D01 = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
@@ -209,6 +323,7 @@
 			targets = (
 				A9308F871A58B9A900C05D01 /* NSFargo */,
 				A9308FA31A58B9A900C05D01 /* NSFargoTests */,
+				A9308FC71A58D1A600C05D01 /* UpcomingEvents */,
 			);
 		};
 /* End PBXProject section */
@@ -232,6 +347,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9308FC61A58D1A600C05D01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9308FD31A58D1A600C05D01 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -239,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9308FC11A58C40800C05D01 /* UIColor+NSFargo.m in Sources */,
 				A9308F911A58B9A900C05D01 /* AppDelegate.m in Sources */,
 				A9308FBB1A58C0D900C05D01 /* EventMainViewController.m in Sources */,
 				A9308F8E1A58B9A900C05D01 /* main.m in Sources */,
@@ -253,6 +377,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9308FC41A58D1A600C05D01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9308FD11A58D1A600C05D01 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,6 +392,11 @@
 			isa = PBXTargetDependency;
 			target = A9308F871A58B9A900C05D01 /* NSFargo */;
 			targetProxy = A9308FA51A58B9A900C05D01 /* PBXContainerItemProxy */;
+		};
+		A9308FD51A58D1A600C05D01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9308FC71A58D1A600C05D01 /* UpcomingEvents */;
+			targetProxy = A9308FD41A58D1A600C05D01 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -355,6 +492,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NSFargo/NSFargo_PrefixHeader.pch;
 				INFOPLIST_FILE = NSFargo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,6 +505,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NSFargo/NSFargo_PrefixHeader.pch;
 				INFOPLIST_FILE = NSFargo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,6 +548,30 @@
 			};
 			name = Release;
 		};
+		A9308FD81A58D1A600C05D01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UpcomingEvents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A9308FD91A58D1A600C05D01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UpcomingEvents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -432,6 +597,14 @@
 			buildConfigurations = (
 				A9308FB21A58B9A900C05D01 /* Debug */,
 				A9308FB31A58B9A900C05D01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9308FD71A58D1A600C05D01 /* Build configuration list for PBXNativeTarget "UpcomingEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9308FD81A58D1A600C05D01 /* Debug */,
+				A9308FD91A58D1A600C05D01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
