@@ -1,15 +1,29 @@
 { "upcoming":[
               {
               "title": "January Meetup",
-              "date": "2015-01-06",
-              "start_time": "18:00",
-              "end_time": "20:00"
+              "date_time": "2015-01-06 18:00:00 -0600"
               },
               {
               "title": "February Meetup",
-              "date": "2015-02-03",
-              "start_time": "18:00",
-              "end_time": "20:00"
+              "date_time": "2015-02-03 18:00:00 -0600"
               }
-              ]
+              ],
+    "previous":[
+                {
+                "title": "December Meetup",
+                "date_time": "2014-12-02 18:00:00 -0600"
+                },
+                {
+                "title": "October Meetup",
+                "date_time": "2014-10-14 17:30:00 -0600"
+                },
+                {
+                "title": "September Meetup",
+                "date_time": "2014-09-16 17:30:00 -0600"
+                },
+                {
+                "title": "NSFargo Meetup",
+                "date_time": "2014-07-23 18:00:00 -0600"
+                }
+                ]
 }

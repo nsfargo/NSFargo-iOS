@@ -21,6 +21,7 @@
 		A9308FD61A58D1A600C05D01 /* UpcomingEvents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9308FC81A58D1A600C05D01 /* UpcomingEvents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A9308FDC1A58DC9C00C05D01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9308FDB1A58DC9C00C05D01 /* Images.xcassets */; };
 		A9AA0E791A58EED000AFB55A /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = A9AA0E781A58EED000AFB55A /* events.json */; };
+		A9AA0E7A1A599C5200AFB55A /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = A9AA0E781A58EED000AFB55A /* events.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -355,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9AA0E7A1A599C5200AFB55A /* events.json in Resources */,
 				A9308FD31A58D1A600C05D01 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

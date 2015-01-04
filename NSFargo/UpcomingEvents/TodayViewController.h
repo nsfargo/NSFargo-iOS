@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TodayViewController : UIViewController
+@interface TodayViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+    IBOutlet UITableView *widgetTable;
+}
 
 @end
