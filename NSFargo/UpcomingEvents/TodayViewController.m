@@ -7,6 +7,7 @@
 //
 
 #import "TodayViewController.h"
+#import "NSFDateFormatter.h"
 #import <NotificationCenter/NotificationCenter.h>
 
 @interface TodayViewController () <NCWidgetProviding> {
@@ -109,6 +110,7 @@
     
     cell.textLabel.text = event[@"title"];
     cell.textLabel.textColor = [UIColor whiteColor];
+    cell.detailTextLabel.text = [NSFDateFormatter daysStringFromEventDate:[NSFDateFormatter dateFromEventDateString:event[@"date_time"]]];
     
     return cell;
 }

@@ -22,6 +22,10 @@
 		A9308FDC1A58DC9C00C05D01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9308FDB1A58DC9C00C05D01 /* Images.xcassets */; };
 		A9AA0E791A58EED000AFB55A /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = A9AA0E781A58EED000AFB55A /* events.json */; };
 		A9AA0E7A1A599C5200AFB55A /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = A9AA0E781A58EED000AFB55A /* events.json */; };
+		A9AA0E7D1A5B410400AFB55A /* NSFDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AA0E7C1A5B410400AFB55A /* NSFDateFormatter.m */; };
+		A9AA0E7E1A5B410400AFB55A /* NSFDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AA0E7C1A5B410400AFB55A /* NSFDateFormatter.m */; };
+		A9AA0E811A5B430000AFB55A /* NSDate+Escort.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AA0E801A5B430000AFB55A /* NSDate+Escort.m */; };
+		A9AA0E821A5B430000AFB55A /* NSDate+Escort.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AA0E801A5B430000AFB55A /* NSDate+Escort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,10 @@
 		A9308FD21A58D1A600C05D01 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		A9308FDB1A58DC9C00C05D01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A9AA0E781A58EED000AFB55A /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		A9AA0E7B1A5B410400AFB55A /* NSFDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFDateFormatter.h; sourceTree = "<group>"; };
+		A9AA0E7C1A5B410400AFB55A /* NSFDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFDateFormatter.m; sourceTree = "<group>"; };
+		A9AA0E7F1A5B430000AFB55A /* NSDate+Escort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Escort.h"; sourceTree = "<group>"; };
+		A9AA0E801A5B430000AFB55A /* NSDate+Escort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Escort.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				A9308FBE1A58C3D300C05D01 /* Categories */,
+				A9AA0E7B1A5B410400AFB55A /* NSFDateFormatter.h */,
+				A9AA0E7C1A5B410400AFB55A /* NSFDateFormatter.m */,
 			);
 			name = "Helper Classes";
 			sourceTree = "<group>";
@@ -201,6 +211,8 @@
 		A9308FBE1A58C3D300C05D01 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				A9AA0E7F1A5B430000AFB55A /* NSDate+Escort.h */,
+				A9AA0E801A5B430000AFB55A /* NSDate+Escort.m */,
 				A9308FBF1A58C40800C05D01 /* UIColor+NSFargo.h */,
 				A9308FC01A58C40800C05D01 /* UIColor+NSFargo.m */,
 			);
@@ -370,6 +382,8 @@
 			files = (
 				A9308FC11A58C40800C05D01 /* UIColor+NSFargo.m in Sources */,
 				A9308F911A58B9A900C05D01 /* AppDelegate.m in Sources */,
+				A9AA0E811A5B430000AFB55A /* NSDate+Escort.m in Sources */,
+				A9AA0E7D1A5B410400AFB55A /* NSFDateFormatter.m in Sources */,
 				A9308FBB1A58C0D900C05D01 /* EventMainViewController.m in Sources */,
 				A9308F8E1A58B9A900C05D01 /* main.m in Sources */,
 			);
@@ -387,7 +401,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9AA0E7E1A5B410400AFB55A /* NSFDateFormatter.m in Sources */,
 				A9308FD11A58D1A600C05D01 /* TodayViewController.m in Sources */,
+				A9AA0E821A5B430000AFB55A /* NSDate+Escort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

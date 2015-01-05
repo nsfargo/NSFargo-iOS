@@ -7,6 +7,7 @@
 //
 
 #import "EventMainViewController.h"
+#import "NSFDateFormatter.h"
 
 @interface EventMainViewController () {
     NSMutableArray *upcomingEvents;
@@ -15,21 +16,11 @@
 
 @end
 
-static NSDateFormatter *eventFormatter = nil;
-static NSDateFormatter *dateFormatter = nil;
-
 @implementation EventMainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    eventFormatter = [[NSDateFormatter alloc] init];
-    [eventFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss ZZZ"];
-    dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setLocale:[NSLocale currentLocale]];
-    [dateFormatter setDateStyle:NSDateFormatterFullStyle];
-    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
     
     // load events
     NSURL *eventsURL = [[NSBundle mainBundle] URLForResource:@"events" withExtension:@"json"];
@@ -87,16 +78,17 @@ static NSDateFormatter *dateFormatter = nil;
         // upcoming events
         NSDictionary *event = upcomingEvents[indexPath.row];
         cell.textLabel.text = event[@"title"];
-        NSDate *date = [eventFormatter dateFromString:event[@"date_time"]];
-        cell.detailTextLabel.text = [dateFormatter stringFromDate:date];
+        //NSDate *date = [eventFormatter dateFromString:event[@"date_time"]];
+        cell.detailTextLabel.text = [NSFDateFormatter dateStringFromEventDate:[NSFDateFormatter dateFromEventDateString:event[@"date_time"]]];
     }
     
     if (indexPath.section == 1) {
         // previous events
         NSDictionary *event = previousEvents[indexPath.row];
         cell.textLabel.text = event[@"title"];
-        NSDate *date = [eventFormatter dateFromString:event[@"date_time"]];
-        cell.detailTextLabel.text = [dateFormatter stringFromDate:date];
+        //NSDate *date = [eventFormatter dateFromString:event[@"date_time"]];
+        //NSDate *date = [NSFDateFormatter dateFromEventDateString:event[@"date_time"]];
+        cell.detailTextLabel.text = [NSFDateFormatter dateStringFromEventDate:[NSFDateFormatter dateFromEventDateString:event[@"date_time"]]];
     }
     
     return cell;
