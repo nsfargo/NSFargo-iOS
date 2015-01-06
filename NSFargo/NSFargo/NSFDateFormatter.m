@@ -48,18 +48,23 @@
 + (NSString *)daysStringFromEventDate:(NSDate *)date {
     NSDate *today = [NSDate date];
     
+    
     NSInteger daysUntil = [date daysAfterDate:today];
     
-    NSString *unit;
+    NSString *daysString;
     if (daysUntil == 0) {
-        return NSLocalizedString(@"Today", @"Today");
+        if ([date isEqualToDateIgnoringTime:today]) {
+            return NSLocalizedString(@"Today", @"Today");
+        } else {
+            return NSLocalizedString(@"1 day", @"1 day");
+        }
     } else if (daysUntil == 1) {
-        unit = NSLocalizedString(@"day", @"day");
+        daysString = NSLocalizedString(@"1 day", @"1 day");
     } else {
-        unit = NSLocalizedString(@"days", @"days");
+        daysString = [NSString stringWithFormat:@"%lu %@", daysUntil, NSLocalizedString(@"days", @"days")];
     }
     
-    return [NSString stringWithFormat:@"%lu %@", daysUntil, unit];
+    return daysString;
 }
 
 @end
