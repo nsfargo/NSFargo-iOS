@@ -28,7 +28,6 @@
     NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:stringPath]];
     NSError *error;
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-    NSLog(@"json: %@", json);
     
     upcomingEvents = [json[@"upcoming"] mutableCopy];
     previousEvents = [json[@"previous"] mutableCopy];
@@ -92,6 +91,11 @@
     }
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
 }
 
 @end

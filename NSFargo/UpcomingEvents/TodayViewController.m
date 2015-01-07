@@ -43,7 +43,6 @@
     NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:stringPath]];
     NSError *error;
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-    NSLog(@"json: %@", json);
     
     upcomingEvents = [json[@"upcoming"] mutableCopy];
     [widgetTable reloadData];
@@ -76,7 +75,6 @@
     NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:stringPath]];
     NSError *error;
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-    NSLog(@"json: %@", json);
     
     upcomingEvents = [json[@"upcoming"] mutableCopy];
     [widgetTable reloadData];
